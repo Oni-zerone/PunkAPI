@@ -7,6 +7,8 @@
 
 import Foundation
 
-protocol Request {
+public protocol Request {
+    
+    var path: String { get }
     
 }

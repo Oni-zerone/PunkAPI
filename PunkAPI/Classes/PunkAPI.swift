@@ -20,7 +20,46 @@ public class PunkAPI {
         self.init(sessionConfiguration: .default)
     }
     
-    func getBeer(_ request: Request, completion: @escaping (Result<Response>) -> Void) {
-        
+    public func get(_ request: Request, queue: DispatchQueue = .global(qos: .background), completion: @escaping (Result<[Beer]>) -> Void) {
+     
+        var urlComponent = self.configuration.baseComponent
+        urlComponent.path += request.path
+        guard let url = urlComponent.url else {
+            queue.async { completion(.failure(APIError.invalidURL)) }
+            return
+        }
+
+        self.configuration.session.dataTask(with: url) { (result: Result<[Beer]>) in
+            queue.async {
+                completion(result)
+            }
+        }.resume()
+    }
+}
+
+extension URLSession {
+    
+    func dataTask<Value: Decodable>(with url: URL, completion: @escaping (Result<Value>) -> Void) -> URLSessionDataTask {
+        return self.dataTask(with: url) { (data, response, error) in
+
+            do  {
+                if let error = error {
+                    throw error
+                }
+                
+                guard let data = data else {
+                    throw APIError.emptyResponse
+                }
+                
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                
+                let beers = try decoder.decode(Value.self, from: data)
+                completion(.success(beers))
+                
+            } catch let error {
+                completion(.failure(error))
+            }
+        }
     }
 }

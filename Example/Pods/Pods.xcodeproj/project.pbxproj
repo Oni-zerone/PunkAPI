@@ -15,7 +15,9 @@
 		861F0ED5029160D63BEA52EEDC4F5B2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		94ACB62152B83DE972430EAA4B24D449 /* PunkAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E72CC1703129F4F85A80F609B175F2AA /* PunkAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9767CBEA2219744000E684C4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CBE92219744000E684C4 /* Result.swift */; };
-		9767CBED2219755E00E684C4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CBEC2219755E00E684C4 /* Response.swift */; };
+		9767CBF0221977D300E684C4 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CBEF221977D300E684C4 /* Beer.swift */; };
+		9767CBF22219795E00E684C4 /* BeerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CBF12219795E00E684C4 /* BeerRequest.swift */; };
+		9767CBF422197DCC00E684C4 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CBF322197DCC00E684C4 /* Errors.swift */; };
 		9DEE51DC320AFD89F8CCE79E659D0E92 /* Pods-PunkAPI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ABEAC72915A583BE08AF19F226F5157 /* Pods-PunkAPI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD6B8F0860FB91889F808D08F168E096 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBF879A7A0C8CE59F1DD2A17BB11873 /* Request.swift */; };
 		B0D852DC953C7A0E2C1CB872F9E315BB /* Pods-PunkAPI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E9F26077D1238C6BF679ED6AB0504D /* Pods-PunkAPI_Example-dummy.m */; };
@@ -62,7 +64,9 @@
 		92229C81AD3A318707A49C8449AEB2F5 /* Pods-PunkAPI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PunkAPI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9767CBE92219744000E684C4 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Result.swift; path = PunkAPI/Classes/Request/Result.swift; sourceTree = "<group>"; };
-		9767CBEC2219755E00E684C4 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		9767CBEF221977D300E684C4 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		9767CBF12219795E00E684C4 /* BeerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRequest.swift; sourceTree = "<group>"; };
+		9767CBF322197DCC00E684C4 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = PunkAPI/Classes/Errors.swift; sourceTree = "<group>"; };
 		9D14926C4AE138B3C55CE27E18BE194D /* Pods-PunkAPI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PunkAPI_Tests.modulemap"; sourceTree = "<group>"; };
 		9DDE148E1E89B985353411506461E509 /* Pods_PunkAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkAPI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E9F26077D1238C6BF679ED6AB0504D /* Pods-PunkAPI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PunkAPI_Example-dummy.m"; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				BBBF879A7A0C8CE59F1DD2A17BB11873 /* Request.swift */,
+				9767CBF12219795E00E684C4 /* BeerRequest.swift */,
 			);
 			name = Request;
 			path = PunkAPI/Classes/Request;
@@ -184,6 +189,7 @@
 		890261190D25DC439794AA100CC2F689 /* PunkAPI */ = {
 			isa = PBXGroup;
 			children = (
+				9767CBF322197DCC00E684C4 /* Errors.swift */,
 				9767CBE92219744000E684C4 /* Result.swift */,
 				0AD5D712F315E66077D59EE9C31CF689 /* Configuration.swift */,
 				5C8708EEF51A0078E3211F1AA5F78C06 /* PunkAPI.swift */,
@@ -199,7 +205,7 @@
 		9767CBEE2219756C00E684C4 /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				9767CBEC2219755E00E684C4 /* Response.swift */,
+				9767CBEF221977D300E684C4 /* Beer.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -423,8 +429,10 @@
 				FB6E32A7831DCA2AE93BD8C3F87FA8E3 /* Configuration.swift in Sources */,
 				9767CBEA2219744000E684C4 /* Result.swift in Sources */,
 				3D7A5283D0833518F12109285F42CDD6 /* PunkAPI-dummy.m in Sources */,
+				9767CBF22219795E00E684C4 /* BeerRequest.swift in Sources */,
 				DB20D4F60BC185671791B119F6F2629E /* PunkAPI.swift in Sources */,
-				9767CBED2219755E00E684C4 /* Response.swift in Sources */,
+				9767CBF0221977D300E684C4 /* Beer.swift in Sources */,
+				9767CBF422197DCC00E684C4 /* Errors.swift in Sources */,
 				AD6B8F0860FB91889F808D08F168E096 /* Request.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
