@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PunkAPI_Example' do
+  pod 'PunkAPI', :path => '../'
+
+  target 'PunkAPI_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
