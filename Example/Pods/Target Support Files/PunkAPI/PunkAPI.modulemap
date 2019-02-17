@@ -1,0 +1,6 @@
+framework module PunkAPI {
+  umbrella header "PunkAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}
