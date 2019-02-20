@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        PunkAPI().get(BeerRequest(id: 1), completion: { beers in
+        PunkAPI().get(BeerRequest(id: 6), completion: { beers in
             print(beers)
         })
     }

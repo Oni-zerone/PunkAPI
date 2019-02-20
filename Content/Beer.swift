@@ -10,25 +10,25 @@ import Foundation
 public struct Beer: Codable {
     
     var id: Int
-    var name: String
-    var tagline: String
-    var firstBrewed: String
-    var description: String
-    var imageUrl: String
+    var name: String?
+    var tagline: String?
+    var firstBrewed: String?
+    var description: String?
+    var imageUrl: String?
     
-    var abv: Float
-    var ibu: Float
+    var abv: Float?
+    var ibu: Float?
     
-    var targetFg: Float
-    var targetOg: Float
+    var targetFg: Float?
+    var targetOg: Float?
     
-    var ebc: Float
-    var srm: Float
-    var ph: Float
+    var ebc: Float?
+    var srm: Float?
+    var ph: Float?
     
-    var attenuationLevel: Float
-    var volume: Volume
-    var boilVolume: Volume
+    var attenuationLevel: Float?
+    var volume: Volume?
+    var boilVolume: Volume?
 //    var method: Method
 }
 

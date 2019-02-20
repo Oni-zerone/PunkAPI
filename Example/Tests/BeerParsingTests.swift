@@ -49,6 +49,10 @@ class BeerParsingTests: XCTestCase {
         self.decodeBeers(BeerStub.fifth)
     }
 
+    func testSixth() {
+        self.decodeBeers(BeerStub.sixth)  
+    }
+    
     func testMultipleFirst() {
         self.decodeBeers(BeerStub.multipleFirst)
     }
