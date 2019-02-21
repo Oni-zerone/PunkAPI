@@ -29,32 +29,45 @@ public struct Beer: Codable {
     var attenuationLevel: Float?
     var volume: Volume?
     var boilVolume: Volume?
-//    var method: Method
+    var method: Method?
+    var ingredients: Recipe?
+    var foodPairing: [String]
+    var brewersTips: String?
+    var contributedBy: String?
 }
 
-extension Beer {
-    
-    struct Volume: Codable {
-        
-        var value: Float
-        var unit: String
-    }
-
-    struct Temperature: Codable {
-        
-        var value: Float
-        var unit: String
-    }
-    
-    struct Method {
-        
-        var mashTemp: [Step]
-        var fermentation: Temperature
-        
-        struct Step {
-            var temp: Temperature
-            var duration: Float?
-        }
-    }
+struct Volume: Codable {
+    var value: Float
+    var unit: String
 }
 
+struct Recipe: Codable {
+    
+    struct Ingredient: Codable {
+        var name: String
+        var amount: Quantity?
+    }
+    
+    var malt: [Ingredient]
+    var hops: [Ingredient]
+    var yeast: String?
+}
+
+struct Method: Codable {
+
+    
+
+    struct Step: Codable {
+        var temp: Quantity?
+        var duration: Float?
+    }
+
+    var mashTemp: [Step]?
+    var fermentation: Quantity?
+    var twist: String?
+}
+
+struct Quantity: Codable {
+    var value: Float?
+    var unit: String?
+}
