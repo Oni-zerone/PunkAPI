@@ -18,8 +18,6 @@ platform :ios do
 
   desc "Default CI lane"
   lane :ci do
-    lint
-    pod_lint
     test
     coverage
   end
