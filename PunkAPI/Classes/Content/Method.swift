@@ -10,11 +10,11 @@ import Foundation
 public struct Method: Codable {
     
     struct Step: Codable {
-        var temp: Quantity?
+        var temp: Temperature?
         var duration: Float?
     }
     
     var mashTemp: [Step]?
-    var fermentation: Quantity?
+    var fermentation: Temperature?
     var twist: String?
 }

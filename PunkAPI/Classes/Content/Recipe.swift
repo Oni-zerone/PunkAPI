@@ -11,7 +11,7 @@ public struct Recipe: Codable {
     
     public struct Ingredient: Codable {
         var name: String?
-        var amount: Quantity?
+        var amount: Mass?
     }
     
     var malt: [Ingredient]
