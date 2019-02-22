@@ -18,6 +18,4 @@ class ViewController: UIViewController {
             print(beers)
         })
     }
-
 }
-
