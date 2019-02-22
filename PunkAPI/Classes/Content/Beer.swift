@@ -37,14 +37,14 @@ public struct Beer: Codable {
 }
 
 struct Volume: Codable {
-    var value: Float
-    var unit: String
+    var value: Float?
+    var unit: String?
 }
 
 struct Recipe: Codable {
     
     struct Ingredient: Codable {
-        var name: String
+        var name: String?
         var amount: Quantity?
     }
     

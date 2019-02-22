@@ -207,7 +207,8 @@
 			children = (
 				9767CBEF221977D300E684C4 /* Beer.swift */,
 			);
-			path = Content;
+			name = Content;
+			path = PunkAPI/Classes/Content;
 			sourceTree = "<group>";
 		};
 		9BFECB8663CD309F9214B4311C96BCB5 /* Pods-PunkAPI_Example */ = {
