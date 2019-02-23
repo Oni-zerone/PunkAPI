@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import PunkAPI
+@testable import PunkAPI
 
 class BeerParsingTests: XCTestCase {
 
@@ -25,27 +25,22 @@ class BeerParsingTests: XCTestCase {
     }
 
     func testFirst() {
-        
         self.decodeBeers(BeerStub.first)
     }
 
     func testSecond() {
-        
         self.decodeBeers(BeerStub.second)
     }
 
     func testThird() {
-        
         self.decodeBeers(BeerStub.third)
     }
 
     func testFourth() {
-        
         self.decodeBeers(BeerStub.fourth)
     }
 
     func testFifth() {
-        
         self.decodeBeers(BeerStub.fifth)
     }
 
