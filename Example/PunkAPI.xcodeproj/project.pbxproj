@@ -30,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		00C6BA9ADC6CC9CF141BE6E8 /* Pods_PunkAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkAPI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CA29904BB7426E73CC31E50 /* PunkAPI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PunkAPI.podspec; path = ../PunkAPI.podspec; sourceTree = "<group>"; };
+		0CA29904BB7426E73CC31E50 /* PunkAPI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PunkAPI.podspec; path = ../PunkAPI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		19516DEBCED4A6F0ADCEC345 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		46341D8F014E1940E53D4F02 /* Pods_PunkAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkAPI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* PunkAPI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PunkAPI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
