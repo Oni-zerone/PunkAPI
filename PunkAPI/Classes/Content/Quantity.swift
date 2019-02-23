@@ -8,8 +8,8 @@
 import Foundation
 
 public struct Quantity: Codable {
-    var value: Float?
-    var unit: String?
+    public var value: Float?
+    public var unit: String?
 }
 
 public typealias Temperature = Quantity

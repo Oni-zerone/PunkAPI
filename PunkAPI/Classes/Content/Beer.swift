@@ -9,29 +9,29 @@ import Foundation
 
 public struct Beer: Codable {
     
-    var id: Int
-    var name: String?
-    var tagline: String?
-    var firstBrewed: String?
-    var description: String?
-    var imageUrl: String?
+    public var id: Int
+    public var name: String?
+    public var tagline: String?
+    public var firstBrewed: String?
+    public var description: String?
+    public var imageUrl: String?
     
-    var abv: Float?
-    var ibu: Float?
+    public var abv: Float?
+    public var ibu: Float?
     
-    var targetFg: Float?
-    var targetOg: Float?
+    public var targetFg: Float?
+    public var targetOg: Float?
     
-    var ebc: Float?
-    var srm: Float?
-    var ph: Float?
+    public var ebc: Float?
+    public var srm: Float?
+    public var ph: Float?
     
-    var attenuationLevel: Float?
-    var volume: Volume?
-    var boilVolume: Volume?
-    var method: Method?
-    var ingredients: Recipe?
-    var foodPairing: [String]
-    var brewersTips: String?
-    var contributedBy: String?
+    public var attenuationLevel: Float?
+    public var volume: Volume?
+    public var boilVolume: Volume?
+    public var method: Method?
+    public var ingredients: Recipe?
+    public var foodPairing: [String]
+    public var brewersTips: String?
+    public var contributedBy: String?
 }

@@ -10,11 +10,11 @@ import Foundation
 public struct Recipe: Codable {
     
     public struct Ingredient: Codable {
-        var name: String?
-        var amount: Mass?
+        public var name: String?
+        public var amount: Mass?
     }
     
-    var malt: [Ingredient]
-    var hops: [Ingredient]
-    var yeast: String?
+    public var malt: [Ingredient]
+    public var hops: [Ingredient]
+    public var yeast: String?
 }

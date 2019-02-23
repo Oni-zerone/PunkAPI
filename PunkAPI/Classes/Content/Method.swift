@@ -9,12 +9,12 @@ import Foundation
 
 public struct Method: Codable {
     
-    struct Step: Codable {
-        var temp: Temperature?
-        var duration: Float?
+    public struct Step: Codable {
+        public var temp: Temperature?
+        public var duration: Float?
     }
     
-    var mashTemp: [Step]?
-    var fermentation: Temperature?
-    var twist: String?
+    public var mashTemp: [Step]?
+    public var fermentation: Temperature?
+    public var twist: String?
 }
