@@ -13,7 +13,8 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		9767CBF7221993F900E684C4 /* BeerParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CBF6221993F800E684C4 /* BeerParsingTests.swift */; };
+		9767CBFA2219958F00E684C4 /* BeerStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CBF82219958800E684C4 /* BeerStubs.swift */; };
 		EBB1B4D6901624C6A90359CA /* Pods_PunkAPI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46341D8F014E1940E53D4F02 /* Pods_PunkAPI_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		00C6BA9ADC6CC9CF141BE6E8 /* Pods_PunkAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkAPI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CA29904BB7426E73CC31E50 /* PunkAPI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PunkAPI.podspec; path = ../PunkAPI.podspec; sourceTree = "<group>"; };
+		0CA29904BB7426E73CC31E50 /* PunkAPI.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PunkAPI.podspec; path = ../PunkAPI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		19516DEBCED4A6F0ADCEC345 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		46341D8F014E1940E53D4F02 /* Pods_PunkAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkAPI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* PunkAPI_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PunkAPI_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,8 +42,9 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* PunkAPI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PunkAPI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		613B14F018C28CF1557EC3D5 /* Pods-PunkAPI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkAPI_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PunkAPI_Tests/Pods-PunkAPI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9767CBF6221993F800E684C4 /* BeerParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerParsingTests.swift; sourceTree = "<group>"; };
+		9767CBF82219958800E684C4 /* BeerStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerStubs.swift; sourceTree = "<group>"; };
 		9A440A355337DF96D159D208 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A4CA42C1E1AE14F816574722 /* Pods-PunkAPI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkAPI_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PunkAPI_Example/Pods-PunkAPI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E294694CD6DD5DA5A6B471F1 /* Pods-PunkAPI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkAPI_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PunkAPI_Example/Pods-PunkAPI_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +126,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				9767CBF5221993DA00E684C4 /* BeerParsing */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -157,6 +159,15 @@
 				F793434367F74B6D00F77A47 /* Pods-PunkAPI_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9767CBF5221993DA00E684C4 /* BeerParsing */ = {
+			isa = PBXGroup;
+			children = (
+				9767CBF6221993F800E684C4 /* BeerParsingTests.swift */,
+				9767CBF82219958800E684C4 /* BeerStubs.swift */,
+			);
+			name = BeerParsing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,7 +373,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				9767CBF7221993F900E684C4 /* BeerParsingTests.swift in Sources */,
+				9767CBFA2219958F00E684C4 /* BeerStubs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

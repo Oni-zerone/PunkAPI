@@ -9,14 +9,13 @@ import Foundation
 
 public struct BeerRequest: Request {
     
-    var id: Int
+    public var id: Int
     
     public var path: String {
         return "beers/\(self.id)"
     }
     
     public init(id: Int) {
-        
         self.id = id
     }
 }
