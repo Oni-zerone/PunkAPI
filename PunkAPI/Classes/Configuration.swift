@@ -11,11 +11,17 @@ public struct Configuration {
     
     var session: URLSession
     
-    var baseComponent: URLComponents
+    var baseURL: URL
     
-    init(sessionConfiguration: URLSessionConfiguration) {
+    public init(sessionConfiguration: URLSessionConfiguration, baseURL: URL) {
         
         self.session = URLSession(configuration: sessionConfiguration)
-        self.baseComponent = URLComponents(string: "https://api.punkapi.com/v2/")!
+        self.baseURL = baseURL
     }
+}
+
+public extension Configuration {
+    
+    public static let `default` = Configuration(sessionConfiguration: .default,
+                                                baseURL: URL(string: "https://api.punkapi.com/v2/")!)
 }

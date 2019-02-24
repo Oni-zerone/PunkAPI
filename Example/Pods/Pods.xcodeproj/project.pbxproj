@@ -20,6 +20,7 @@
 		8CA330EBFA4F61AE26881286B24648A7 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD590B492E88AEC8C08B25E45BCFA7 /* Method.swift */; };
 		90001FCA9653A9974B648EAF681F4DD4 /* PunkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C503FD3BF058AD217F43E4A5954BB /* PunkAPI.swift */; };
 		94ACB62152B83DE972430EAA4B24D449 /* PunkAPI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7002BDD7866D71B1BE5B92068B1D65E /* PunkAPI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9767CC062222B1BB00E684C4 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC052222B1BB00E684C4 /* URLBuilder.swift */; };
 		9DEE51DC320AFD89F8CCE79E659D0E92 /* Pods-PunkAPI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ABEAC72915A583BE08AF19F226F5157 /* Pods-PunkAPI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1658BA79EB16D586EE25257AD1D8ED6 /* PunkAPI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED357DDF7318810430C08E0AD4316358 /* PunkAPI-dummy.m */; };
 		A3F6E06BFFDEF9DAD8325928091F4B00 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAFF56967C81FF81A5FE0A0F4AC9EFC /* Result.swift */; };
@@ -60,7 +61,7 @@
 		3FCD590B492E88AEC8C08B25E45BCFA7 /* Method.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		492C127C07A0D9D778B3D645FCDED6AC /* Pods-PunkAPI_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PunkAPI_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		494668F6F12367A934530175780F1FB4 /* BeerRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BeerRequest.swift; sourceTree = "<group>"; };
-		49FB5023B50B37DFC2215303164C7685 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = PunkAPI/Classes/Errors.swift; sourceTree = "<group>"; };
+		49FB5023B50B37DFC2215303164C7685 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		541ACAD8BAF53EB42A722470D92D1723 /* Beer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		54767361581B8332A2D7629F5E98048E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		608E9332AF8468043B49B03317025805 /* Pods-PunkAPI_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PunkAPI_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 		864A4FE64365AC74BB9E53A4618E5F55 /* PunkAPI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = PunkAPI.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		92229C81AD3A318707A49C8449AEB2F5 /* Pods-PunkAPI_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PunkAPI_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9767CC052222B1BB00E684C4 /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
 		9D14926C4AE138B3C55CE27E18BE194D /* Pods-PunkAPI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PunkAPI_Tests.modulemap"; sourceTree = "<group>"; };
 		9DDE148E1E89B985353411506461E509 /* Pods_PunkAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkAPI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E9F26077D1238C6BF679ED6AB0504D /* Pods-PunkAPI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PunkAPI_Example-dummy.m"; sourceTree = "<group>"; };
@@ -192,6 +194,15 @@
 			path = PunkAPI/Classes/Content;
 			sourceTree = "<group>";
 		};
+		9767CC042222B13000E684C4 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				49FB5023B50B37DFC2215303164C7685 /* Errors.swift */,
+				1BAFF56967C81FF81A5FE0A0F4AC9EFC /* Result.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
 		9BFECB8663CD309F9214B4311C96BCB5 /* Pods-PunkAPI_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,11 +225,11 @@
 			isa = PBXGroup;
 			children = (
 				3DD1936865DE99565E7C6A3CA8A62046 /* Configuration.swift */,
-				49FB5023B50B37DFC2215303164C7685 /* Errors.swift */,
 				A96C503FD3BF058AD217F43E4A5954BB /* PunkAPI.swift */,
-				90DDE1C48D67E6010A82C6341C9BA92D /* Content */,
-				F3C407FDC658F8445BE7AB2FF5F32CB6 /* Pod */,
 				EE14703CB73E7B607CA53D2EC58437E4 /* Request */,
+				90DDE1C48D67E6010A82C6341C9BA92D /* Content */,
+				9767CC042222B13000E684C4 /* Results */,
+				F3C407FDC658F8445BE7AB2FF5F32CB6 /* Pod */,
 				6FCCF155F5EBF133E1D6AAA9C42FCD87 /* Support Files */,
 			);
 			name = PunkAPI;
@@ -254,9 +265,9 @@
 		EE14703CB73E7B607CA53D2EC58437E4 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				494668F6F12367A934530175780F1FB4 /* BeerRequest.swift */,
 				F184F71C3E715F7CB4001C228E19BEBB /* Request.swift */,
-				1BAFF56967C81FF81A5FE0A0F4AC9EFC /* Result.swift */,
+				494668F6F12367A934530175780F1FB4 /* BeerRequest.swift */,
+				9767CC052222B1BB00E684C4 /* URLBuilder.swift */,
 			);
 			name = Request;
 			path = PunkAPI/Classes/Request;
@@ -420,6 +431,7 @@
 				D8CFB7B7D1AAC97CCB20D1DD5C56FB9B /* Configuration.swift in Sources */,
 				3AF70E263893077BB94A1C3F36DCC044 /* Errors.swift in Sources */,
 				8CA330EBFA4F61AE26881286B24648A7 /* Method.swift in Sources */,
+				9767CC062222B1BB00E684C4 /* URLBuilder.swift in Sources */,
 				A1658BA79EB16D586EE25257AD1D8ED6 /* PunkAPI-dummy.m in Sources */,
 				90001FCA9653A9974B648EAF681F4DD4 /* PunkAPI.swift in Sources */,
 				C0BB3FEC5BB8EF2E7C42FD464D459623 /* Quantity.swift in Sources */,

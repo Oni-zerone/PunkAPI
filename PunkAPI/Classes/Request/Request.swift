@@ -10,4 +10,13 @@ import Foundation
 public protocol Request {
     
     var path: String { get }
+    
+    var parameters: [String: Any]? { get }
+}
+
+public extension Request {
+    
+    var parameters: [String: Any]? {
+        return nil
+    }
 }
