@@ -11,11 +11,27 @@ import PunkAPI
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        PunkAPI().get(BeerRequest(id: 1), completion: { beers in
-            print(beers)
-        })
+    }
+    
+    
+    @IBAction func loadBeerAction(_ sender: Any) {
+        
+        PunkAPI().get(BeerRequest(id: 6), queue: .main) { [weak self] beersResult in
+            
+            guard let strongSelf = self else { return }
+            switch beersResult {
+                
+                case .success(let beers):
+                    strongSelf.label.text = beers.first?.name ?? "Not Found"
+                
+                case .failure(let error):
+                    strongSelf.label.text = error.localizedDescription
+            }
+        }
     }
 }

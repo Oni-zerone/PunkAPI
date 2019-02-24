@@ -30,9 +30,7 @@ public class PunkAPI {
         }
 
         self.configuration.session.dataTask(with: url) { (result: Result<[Beer]>) in
-            queue.async {
-                completion(result)
-            }
+            queue.async { completion(result) }
         }.resume()
     }
 }

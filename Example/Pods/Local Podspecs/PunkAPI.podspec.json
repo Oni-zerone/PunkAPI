@@ -1,22 +1,23 @@
 {
   "name": "PunkAPI",
   "version": "0.1.0",
-  "summary": "A short description of PunkAPI.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/acct<blob>=<NULL>/PunkAPI",
+  "summary": "A little swift wrapper for PunkAPI by @samjbmason",
+  "description": "\"Have you ever wanted to search through Brewdog's expansive back catalogue of beer in a programmatic way? Maybe build a tool that pairs beer with food, or search beers with an abv of more than 4%? Well now your prayers have been answered!\"",
+  "homepage": "https://github.com/Oni-zerone/PunkAPI",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "acct<blob>=<NULL>": "oni.zerone@gmail.com"
+    "Andrea Altea": "oni.zerone@gmail.com"
   },
   "source": {
-    "git": "https://github.com/acct<blob>=<NULL>/PunkAPI.git",
+    "git": "https://github.com/Oni-zerone/PunkAPI.git",
     "tag": "0.1.0"
   },
+  "social_media_url": "https://twitter.com/Oni_zerone",
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
   "source_files": "PunkAPI/Classes/**/*"
 }

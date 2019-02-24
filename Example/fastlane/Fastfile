@@ -54,7 +54,7 @@ platform :ios do
           proj: "PunkAPI.xcodeproj",
           scheme: "PunkAPI-Example",
           binary_basename: "PunkAPI",
-          source_directory: "../PunkAPI",
+          source_directory: "../PunkAPI/*",
           simple_output: true,
           coveralls: true
         )

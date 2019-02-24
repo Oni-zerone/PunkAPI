@@ -10,5 +10,4 @@ import Foundation
 public protocol Request {
     
     var path: String { get }
-    
 }
