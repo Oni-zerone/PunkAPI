@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     @IBAction func loadBeerAction(_ sender: Any) {
         
-        PunkAPI().get(BeerRequest(id: 6), queue: .main) { [weak self] beersResult in
+        PunkAPI().get(RandomBeerRequest(), queue: .main) { [weak self] beersResult in
             
             guard let strongSelf = self else { return }
             switch beersResult {
