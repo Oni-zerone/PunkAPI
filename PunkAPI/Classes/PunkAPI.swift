@@ -11,20 +11,14 @@ public class PunkAPI {
     
     var configuration: Configuration
     
-    public init(sessionConfiguration: URLSessionConfiguration) {
+    public init(configuration: Configuration = .default) {
         
-        self.configuration = Configuration(sessionConfiguration: sessionConfiguration)
-    }
-    
-    public convenience init() {
-        self.init(sessionConfiguration: .default)
+        self.configuration = configuration
     }
     
     public func get(_ request: Request, queue: DispatchQueue = .global(qos: .background), completion: @escaping (Result<[Beer]>) -> Void) {
      
-        var urlComponent = self.configuration.baseComponent
-        urlComponent.path += request.path
-        guard let url = urlComponent.url else {
+        guard let url = configuration.baseURL.url(request: request) else {
             queue.async { completion(.failure(APIError.invalidURL)) }
             return
         }
