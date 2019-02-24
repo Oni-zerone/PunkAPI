@@ -13,6 +13,13 @@ import XCTest
 
 class BeerRequestTest: XCTestCase {
     
+    func testRandomBeerRequest() {
+        
+        let request = RandomBeerRequest()
+        XCTAssert(request.path == "beers/random")
+        XCTAssert(request.parameters == nil)
+    }
+    
     func testBeerRequests() {
         
         self.testBeerRequest(with: 1)
