@@ -12,10 +12,10 @@ struct IntParameter: RequestParameter {
     var type: String
     var condition: Condition
     var value: Any
-    init(key: String, condition: Condition, value: Int) {
+    init(key: String, condition: Condition, value: Float) {
         self.type = key
         self.condition = condition
-        self.value = value
+        self.value = Int(value)
     }
     var key: String {
         return "\(type)_\(condition.dimension)"

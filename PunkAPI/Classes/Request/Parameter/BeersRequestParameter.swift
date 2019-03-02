@@ -11,9 +11,9 @@ extension BeersRequest {
     
     public enum Parameter {
         
-        case abv(condition: Condition, value: Int)
-        case ibu(condition: Condition, value: Int)
-        case ebc(condition: Condition, value: Int)
+        case abv(condition: Condition, value: Float)
+        case ibu(condition: Condition, value: Float)
+        case ebc(condition: Condition, value: Float)
         
         case beerName(value: String)
         case yeast(value: String)
