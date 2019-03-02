@@ -20,7 +20,7 @@ struct DateParameter: RequestParameter {
     var dateValue: Date
     
     var key: String {
-        return "\(type)_\(condition.literal)"
+        return "\(type)_\(condition.time)"
     }
     
     var value: Any {

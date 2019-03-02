@@ -13,23 +13,24 @@ protocol RequestParameter {
     var value: Any { get }
 }
 
-extension Array where Element: RequestParameter {
-    
-    var parameters: [String: Any] {
-        return self.reduce(into: [:], { (result, parameter) in
-            result[parameter.key] = parameter.value
-        })
-    }
+public enum Condition {
+    case more
+    case less
 }
 
-enum Condition {
-    case greater
-    case lower
+extension Condition {
     
-    var literal: String {
+    var dimension: String {
         switch self {
-        case .greater: return "gt"
-        case .lower: return "lt"
+        case .more: return "gt"
+        case .less: return "lt"
+        }
+    }
+
+    var time: String {
+        switch self {
+        case .more: return "after"
+        case .less: return "before"
         }
     }
 }

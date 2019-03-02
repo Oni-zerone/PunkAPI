@@ -9,7 +9,7 @@ import Foundation
 
 extension BeersRequest {
     
-   public enum Parameter {
+    public enum Parameter {
         
         case abv(condition: Condition, value: Float)
         case ibu(condition: Condition, value: Float)
@@ -19,41 +19,45 @@ extension BeersRequest {
         case yeast(value: String)
         
         case brewed(condition: Condition, value: Date)
-    
-    case hops(value: String)
+        
+        case hops(value: String)
         case malt(value: String)
         case food(value: String)
+        
+        case ids(value: [Int])
+    }
+}
+
+extension BeersRequest.Parameter {
     
-    case ids(value: [Int])
     
-        internal var parameter: RequestParameter {
-            switch self {
-            case let .abv(condition, value):
-                return FloatParameter(key: "abv", condition: condition, value: value)
-            case let .ibu(condition, value):
-                return FloatParameter(key: "ibu", condition: condition, value: value)
-            case let .ebc(condition, value):
-                return FloatParameter(key: "ebc", condition: condition, value: value)
-                
-            case let .beerName(value):
-                return StringParameter(key: "beer_name", value: value)
-            case let .yeast(value):
-                return StringParameter(key: "yeast", value: value)
-                
-            case let .brewed(condition, value):
-                return DateParameter(type: "brewed", condition: condition, dateValue: value)
-                
-            case let .hops(value):
-                return StringParameter(key: "hops", value: value)
-            case let .malt(value):
-                return StringParameter(key: "malt", value: value)
-            case let .food(value):
-                return StringParameter(key: "food", value: value)
-                
-            case let .ids(value):
-                let ids = value.map { "\($0)" }.reduce("", { $0.isEmpty ? $1 : $0 + "|" + $1 })
-                return StringParameter(key: "ids", value: ids)
-            }
+    internal var parameter: RequestParameter {
+        switch self {
+        case let .abv(condition, value):
+            return FloatParameter(key: "abv", condition: condition, value: value)
+        case let .ibu(condition, value):
+            return FloatParameter(key: "ibu", condition: condition, value: value)
+        case let .ebc(condition, value):
+            return FloatParameter(key: "ebc", condition: condition, value: value)
+            
+        case let .beerName(value):
+            return StringParameter(key: "beer_name", value: value)
+        case let .yeast(value):
+            return StringParameter(key: "yeast", value: value)
+            
+        case let .brewed(condition, value):
+            return DateParameter(type: "brewed", condition: condition, dateValue: value)
+            
+        case let .hops(value):
+            return StringParameter(key: "hops", value: value)
+        case let .malt(value):
+            return StringParameter(key: "malt", value: value)
+        case let .food(value):
+            return StringParameter(key: "food", value: value)
+            
+        case let .ids(value):
+            let ids = value.map { "\($0)" }.reduce("", { $0.isEmpty ? $1 : $0 + "|" + $1 })
+            return StringParameter(key: "ids", value: ids)
         }
     }
 }

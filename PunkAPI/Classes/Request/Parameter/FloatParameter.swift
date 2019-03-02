@@ -18,7 +18,7 @@ struct FloatParameter: RequestParameter {
         self.value = value
     }
     var key: String {
-        return "\(type)_\(condition.literal)"
+        return "\(type)_\(condition.dimension)"
     }
     
 }

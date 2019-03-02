@@ -7,19 +7,43 @@
 
 import UIKit
 
-class BeersRequest {
+public struct BeersRequest {
 
-    var page: Int
-    
-    init(page: Int = 0) {
+    public var page: Int
+    public var filter: [BeersRequest.Parameter]
+
+    public init(filter:[BeersRequest.Parameter] = [], page: Int = 0) {
+        self.filter = filter
         self.page = page
     }
-    
 }
 
 extension BeersRequest: Request {
     
-    var path: String {
+    public var path: String {
         return "beers"
+    }
+    
+    public var parameters: [String: Any]? {
+        
+        if var filter = filterParameters {
+            filter["page"] = page
+            return filter
+        }
+        return ["page": page]
+    }
+}
+
+extension BeersRequest {
+
+    var filterParameters: [String: Any]? {
+        
+        if filter.isEmpty { return nil }
+        
+        return filter.map { parameter -> RequestParameter in
+            return parameter.parameter
+            }.reduce(into: [:], { (result, parameter) in
+                result[parameter.key] = parameter.value
+            })
     }
 }

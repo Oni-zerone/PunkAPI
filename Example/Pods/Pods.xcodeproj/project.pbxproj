@@ -221,10 +221,10 @@
 			isa = PBXGroup;
 			children = (
 				9767CC1B222ADDD100E684C4 /* RequestParameter.swift */,
-				9767CC18222AC45900E684C4 /* BeersRequestParameter.swift */,
 				9767CC1F222ADE2500E684C4 /* FloatParameter.swift */,
 				9767CC21222ADE5100E684C4 /* StringParameter.swift */,
 				9767CC23222ADE6800E684C4 /* DateParameter.swift */,
+				9767CC18222AC45900E684C4 /* BeersRequestParameter.swift */,
 			);
 			path = Parameter;
 			sourceTree = "<group>";
