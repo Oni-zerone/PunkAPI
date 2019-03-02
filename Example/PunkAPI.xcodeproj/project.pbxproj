@@ -13,13 +13,14 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		9761024E222B328F00C3BD6B /* BeersRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9761024D222B328F00C3BD6B /* BeersRequestTests.swift */; };
 		9767CBF7221993F900E684C4 /* BeerParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CBF6221993F800E684C4 /* BeerParsingTests.swift */; };
 		9767CBFA2219958F00E684C4 /* BeerStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CBF82219958800E684C4 /* BeerStubs.swift */; };
 		9767CC092222B63700E684C4 /* URLBuildTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC072222B60F00E684C4 /* URLBuildTests.swift */; };
 		9767CC0B2222BB1E00E684C4 /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC0A2222BB1E00E684C4 /* MockSession.swift */; };
 		9767CC0D2222BDD000E684C4 /* BeerRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC0C2222BDD000E684C4 /* BeerRequestTests.swift */; };
 		9767CC0F2223550E00E684C4 /* ConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC0E2223550E00E684C4 /* ConfigurationTests.swift */; };
-		9767CC27222B299300E684C4 /* BeersRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC25222B286F00E684C4 /* BeersRequestTests.swift */; };
+		9767CC27222B299300E684C4 /* BeersRequestParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC25222B286F00E684C4 /* BeersRequestParametersTests.swift */; };
 		EBB1B4D6901624C6A90359CA /* Pods_PunkAPI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46341D8F014E1940E53D4F02 /* Pods_PunkAPI_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,13 +49,14 @@
 		607FACE51AFB9204008FA782 /* PunkAPI_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PunkAPI_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		613B14F018C28CF1557EC3D5 /* Pods-PunkAPI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkAPI_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PunkAPI_Tests/Pods-PunkAPI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9761024D222B328F00C3BD6B /* BeersRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersRequestTests.swift; sourceTree = "<group>"; };
 		9767CBF6221993F800E684C4 /* BeerParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerParsingTests.swift; sourceTree = "<group>"; };
 		9767CBF82219958800E684C4 /* BeerStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerStubs.swift; sourceTree = "<group>"; };
 		9767CC072222B60F00E684C4 /* URLBuildTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuildTests.swift; sourceTree = "<group>"; };
 		9767CC0A2222BB1E00E684C4 /* MockSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
 		9767CC0C2222BDD000E684C4 /* BeerRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRequestTests.swift; sourceTree = "<group>"; };
 		9767CC0E2223550E00E684C4 /* ConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationTests.swift; sourceTree = "<group>"; };
-		9767CC25222B286F00E684C4 /* BeersRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersRequestTests.swift; sourceTree = "<group>"; };
+		9767CC25222B286F00E684C4 /* BeersRequestParametersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersRequestParametersTests.swift; sourceTree = "<group>"; };
 		9A440A355337DF96D159D208 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A4CA42C1E1AE14F816574722 /* Pods-PunkAPI_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkAPI_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PunkAPI_Example/Pods-PunkAPI_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E294694CD6DD5DA5A6B471F1 /* Pods-PunkAPI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkAPI_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PunkAPI_Example/Pods-PunkAPI_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,7 +188,8 @@
 			children = (
 				9767CC072222B60F00E684C4 /* URLBuildTests.swift */,
 				9767CC0C2222BDD000E684C4 /* BeerRequestTests.swift */,
-				9767CC25222B286F00E684C4 /* BeersRequestTests.swift */,
+				9761024D222B328F00C3BD6B /* BeersRequestTests.swift */,
+				9767CC25222B286F00E684C4 /* BeersRequestParametersTests.swift */,
 				9767CC0A2222BB1E00E684C4 /* MockSession.swift */,
 				9767CC0E2223550E00E684C4 /* ConfigurationTests.swift */,
 			);
@@ -416,12 +419,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9767CC0D2222BDD000E684C4 /* BeerRequestTests.swift in Sources */,
-				9767CC27222B299300E684C4 /* BeersRequestTests.swift in Sources */,
+				9767CC27222B299300E684C4 /* BeersRequestParametersTests.swift in Sources */,
 				9767CBF7221993F900E684C4 /* BeerParsingTests.swift in Sources */,
 				9767CC0F2223550E00E684C4 /* ConfigurationTests.swift in Sources */,
 				9767CBFA2219958F00E684C4 /* BeerStubs.swift in Sources */,
 				9767CC0B2222BB1E00E684C4 /* MockSession.swift in Sources */,
 				9767CC092222B63700E684C4 /* URLBuildTests.swift in Sources */,
+				9761024E222B328F00C3BD6B /* BeersRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
