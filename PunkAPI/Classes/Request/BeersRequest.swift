@@ -7,13 +7,12 @@
 
 import UIKit
 
-class BeersRequest: Request {
+class BeersRequest {
 
     var page: Int
     
     init(page: Int = 0) {
         self.page = page
-        
     }
     
 }
