@@ -11,9 +11,9 @@ extension BeersRequest {
     
     public enum Parameter {
         
-        case abv(condition: Condition, value: Float)
-        case ibu(condition: Condition, value: Float)
-        case ebc(condition: Condition, value: Float)
+        case abv(condition: Condition, value: Int)
+        case ibu(condition: Condition, value: Int)
+        case ebc(condition: Condition, value: Int)
         
         case beerName(value: String)
         case yeast(value: String)
@@ -34,11 +34,11 @@ extension BeersRequest.Parameter {
     internal var parameter: RequestParameter {
         switch self {
         case let .abv(condition, value):
-            return FloatParameter(key: "abv", condition: condition, value: value)
+            return IntParameter(key: "abv", condition: condition, value: value)
         case let .ibu(condition, value):
-            return FloatParameter(key: "ibu", condition: condition, value: value)
+            return IntParameter(key: "ibu", condition: condition, value: value)
         case let .ebc(condition, value):
-            return FloatParameter(key: "ebc", condition: condition, value: value)
+            return IntParameter(key: "ebc", condition: condition, value: value)
             
         case let .beerName(value):
             return StringParameter(key: "beer_name", value: value)

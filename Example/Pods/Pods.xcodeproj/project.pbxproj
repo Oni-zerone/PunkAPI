@@ -25,7 +25,7 @@
 		9767CC17222AC3F900E684C4 /* BeersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC16222AC3F900E684C4 /* BeersRequest.swift */; };
 		9767CC19222AC45900E684C4 /* BeersRequestParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC18222AC45900E684C4 /* BeersRequestParameter.swift */; };
 		9767CC1C222ADDD100E684C4 /* RequestParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC1B222ADDD100E684C4 /* RequestParameter.swift */; };
-		9767CC20222ADE2500E684C4 /* FloatParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC1F222ADE2500E684C4 /* FloatParameter.swift */; };
+		9767CC20222ADE2500E684C4 /* IntParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC1F222ADE2500E684C4 /* IntParameter.swift */; };
 		9767CC22222ADE5100E684C4 /* StringParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC21222ADE5100E684C4 /* StringParameter.swift */; };
 		9767CC24222ADE6800E684C4 /* DateParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC23222ADE6800E684C4 /* DateParameter.swift */; };
 		9DEE51DC320AFD89F8CCE79E659D0E92 /* Pods-PunkAPI_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ABEAC72915A583BE08AF19F226F5157 /* Pods-PunkAPI_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -85,7 +85,7 @@
 		9767CC16222AC3F900E684C4 /* BeersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersRequest.swift; sourceTree = "<group>"; };
 		9767CC18222AC45900E684C4 /* BeersRequestParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersRequestParameter.swift; sourceTree = "<group>"; };
 		9767CC1B222ADDD100E684C4 /* RequestParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestParameter.swift; sourceTree = "<group>"; };
-		9767CC1F222ADE2500E684C4 /* FloatParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatParameter.swift; sourceTree = "<group>"; };
+		9767CC1F222ADE2500E684C4 /* IntParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntParameter.swift; sourceTree = "<group>"; };
 		9767CC21222ADE5100E684C4 /* StringParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringParameter.swift; sourceTree = "<group>"; };
 		9767CC23222ADE6800E684C4 /* DateParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateParameter.swift; sourceTree = "<group>"; };
 		9D14926C4AE138B3C55CE27E18BE194D /* Pods-PunkAPI_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PunkAPI_Tests.modulemap"; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				9767CC1B222ADDD100E684C4 /* RequestParameter.swift */,
-				9767CC1F222ADE2500E684C4 /* FloatParameter.swift */,
+				9767CC1F222ADE2500E684C4 /* IntParameter.swift */,
 				9767CC21222ADE5100E684C4 /* StringParameter.swift */,
 				9767CC23222ADE6800E684C4 /* DateParameter.swift */,
 				9767CC18222AC45900E684C4 /* BeersRequestParameter.swift */,
@@ -459,7 +459,7 @@
 				80B5BF4A54A873CBBDE11FD50E93473F /* BeerRequest.swift in Sources */,
 				9767CC19222AC45900E684C4 /* BeersRequestParameter.swift in Sources */,
 				D8CFB7B7D1AAC97CCB20D1DD5C56FB9B /* Configuration.swift in Sources */,
-				9767CC20222ADE2500E684C4 /* FloatParameter.swift in Sources */,
+				9767CC20222ADE2500E684C4 /* IntParameter.swift in Sources */,
 				3AF70E263893077BB94A1C3F36DCC044 /* Errors.swift in Sources */,
 				8CA330EBFA4F61AE26881286B24648A7 /* Method.swift in Sources */,
 				9767CC062222B1BB00E684C4 /* URLBuilder.swift in Sources */,

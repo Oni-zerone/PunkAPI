@@ -26,11 +26,11 @@ extension BeersRequest: Request {
     
     public var parameters: [String: Any]? {
         
-        if var filter = filterParameters {
-            filter["page"] = page
-            return filter
-        }
-        return ["page": page]
+        guard page > 0 else { return filterParameters }
+
+        var parameters = filterParameters ?? [:]
+        parameters["page"] = page
+        return parameters
     }
 }
 

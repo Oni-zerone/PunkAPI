@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     @IBAction func loadBeerAction(_ sender: Any) {
         
-        let request = BeersRequest(filter: [.abv(condition: .more, value: 1.2)])
+        let request = BeersRequest(filter: [.abv(condition: .more, value: 3)])
         
         PunkAPI().get(request, queue: .main) { [weak self] beersResult in
             
