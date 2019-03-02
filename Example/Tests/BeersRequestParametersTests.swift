@@ -9,7 +9,7 @@
 import XCTest
 @testable import PunkAPI
 
-class BeersRequestTest: XCTestCase {
+class BeersRequestParametersTests: XCTestCase {
     
     func testABVParameterGreater() {
         let parameter = getParameter(.abv(condition: .more, value: 1.2))
