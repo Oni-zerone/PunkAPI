@@ -11,7 +11,8 @@ struct DateParameter: RequestParameter {
     
     static var formatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "mm-yyyy"
+        formatter.locale = Locale.current
+        formatter.dateFormat = "MM-yyyy"
         return formatter
     }()
     
