@@ -198,6 +198,7 @@
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "PunkAPI_Example" */;
 			buildPhases = (
 				44318C15D7E57EAD731D7620 /* [CP] Check Pods Manifest.lock */,
+				9767CC15222AC06A00E684C4 /* SwiftLint */,
 				9767CBEB2219750F00E684C4 /* ShellScript */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
@@ -354,6 +355,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"/usr/local/bin:$PATH\"\nexport LANG=en_US.UTF-8\n\nif which swiftlint >/dev/null; then\n\nif [ \"$CI\" == true ]; then\necho swiftlint lint --strict\nelse\necho swiftlint\nfi\n\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		9767CC15222AC06A00E684C4 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"/usr/local/bin:$PATH\"\nexport LANG=en_US.UTF-8\n\nif which swiftlint >/dev/null; then\n\nif [ \"$CI\" == true ]; then\necho swiftlint lint --strict\nelse\necho swiftlint\nfi\n\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
 		};
 		E502466B5504391CFC64510C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
