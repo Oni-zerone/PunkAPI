@@ -20,18 +20,3 @@ public extension Request {
         return nil
     }
 }
-
-protocol RequestParameter {
-    
-    var key: String { get }
-    var value: Any { get }
-}
-
-extension Array where Element: RequestParameter {
-    
-    var parameters: [String: Any] {
-        return self.reduce(into: [:], { (result, parameter) in
-            result[parameter.key] = parameter.value
-        })
-    }
-}
