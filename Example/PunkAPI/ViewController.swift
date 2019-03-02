@@ -21,13 +21,25 @@ class ViewController: UIViewController {
     
     @IBAction func loadBeerAction(_ sender: Any) {
         
-        PunkAPI().get(RandomBeerRequest(), queue: .main) { [weak self] beersResult in
+        let request = BeersRequest(filter: [.abv(condition: .more, value: 1.2)])
+        
+        PunkAPI().get(request, queue: .main) { [weak self] beersResult in
             
             guard let strongSelf = self else { return }
             switch beersResult {
                 
                 case .success(let beers):
-                    strongSelf.label.text = beers.first?.name ?? "Not Found"
+                    let string = beers.reduce(into: "", { (result, beer) in
+                        
+                        guard let name = beer.name else { return }
+                        if result.isEmpty {
+                            result = name
+                            return
+                        }
+                        return result.append(contentsOf: ", \(name)")
+                    })
+                    
+                    strongSelf.label.text = string.isEmpty ? "Not Found" : string
                 
                 case .failure(let error):
                     strongSelf.label.text = error.localizedDescription
