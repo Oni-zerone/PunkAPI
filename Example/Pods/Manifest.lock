@@ -1,0 +1,16 @@
+PODS:
+  - PunkAPI (0.1.0)
+
+DEPENDENCIES:
+  - PunkAPI (from `../`)
+
+EXTERNAL SOURCES:
+  PunkAPI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PunkAPI: c9891a38a2efa7a052f02d02decceb58ca87b5ed
+
+PODFILE CHECKSUM: 77a7edfbda92bc42f026175f2a4105df175a2c99
+
+COCOAPODS: 1.5.3
