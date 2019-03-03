@@ -82,9 +82,9 @@ Will return beers brewed before or after the passed in date.
 Value: `String`
 Will return beers which match the name of the hops of the string passed in (we use fuzzy matching to find the hop names).
 
-##### `BeersRequest.Parameter.malt(value: "American Ale")`
+##### `BeersRequest.Parameter.malt(value: "Extra Pale")`
 Value: `String`
-Will return beers which match the name of the yeast of the string passed in (we use fuzzy matching to find the yeast names).
+Will return beers which match the name of the malt of the string passed in (we use fuzzy matching to find the hop names).
 
 ##### `BeersRequest.Parameter.food(value: "Cheesecake")`
 Value: `String`
