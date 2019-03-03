@@ -10,7 +10,8 @@ Pod::Spec.new do |s|
   s.name             = 'PunkAPI'
   s.version          = '0.1.0'
   s.summary          = 'A little swift wrapper for PunkAPI by @samjbmason'
-
+  s.swift_version    = '4.2'
+  
   s.description      = <<-DESC
   "Have you ever wanted to search through Brewdog's expansive back catalogue of beer in a programmatic way? Maybe build a tool that pairs beer with food, or search beers with an abv of more than 4%? Well now your prayers have been answered!"
                        DESC
