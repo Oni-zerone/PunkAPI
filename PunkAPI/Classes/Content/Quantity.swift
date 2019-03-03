@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Quantity: Codable {
+public struct Quantity: Codable, Equatable {
     public var value: Float?
     public var unit: String?
 }
