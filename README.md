@@ -43,7 +43,7 @@ Get a beer from given id
 punkApi.get(BeerRequest(id: 1), queue: .main) { beersResult in  }
 ```
 
-####    `BeersRequest(filter: [])`
+####    `BeersRequest(filter: [BeersRequest.Parameter.beerName(value: "Punk IPA")])`
 Get beers that match the passed in options, if no options are passed in it will return all beers in ascending order of `id`.
 ```
 punkApi.get(RandomBeerRequest(), queue: .main) { beersResult in  }
