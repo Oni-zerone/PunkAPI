@@ -10,17 +10,20 @@ import Foundation
 
 class MockURLSession: URLSession {
     
-    var urlCheckBlock: ((_ url: URL) -> Void)?
-    
-    var responseConfig: (data: Data?, response: HTTPURLResponse?, error: Error?)?
+    struct Check {
+        var urlCheckBlock: ((_ url: URL) -> Void)?
+        var responseConfig: (data: Data?, response: HTTPURLResponse?, error: Error?)?
+    }
+
+    var check = Check()
     
     override func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         
-        if let urlCheckBlock = self.urlCheckBlock {
+        if let urlCheckBlock = self.check.urlCheckBlock {
             urlCheckBlock(url)
         }
         
-        return MockSessionDataTask(config: self.responseConfig, completionHandler: completionHandler)
+        return MockSessionDataTask(config: self.check.responseConfig, completionHandler: completionHandler)
     }
 }
 
@@ -30,25 +33,26 @@ class MockSessionDataTask: URLSessionDataTask {
         
         case notConfigured = "Not Configured"
     }
-    
-    var config: (data: Data?, response: HTTPURLResponse?, error: Error?)?
-    
-    var completionHandler: (Data?, URLResponse?, Error?) -> Void
-    
+
+    struct Check {
+        var config: (data: Data?, response: HTTPURLResponse?, error: Error?)?
+        var completionHandler: (Data?, URLResponse?, Error?) -> Void
+    }
+    var check: Check
     init(config: (data: Data?, response: HTTPURLResponse?, error: Error?)?, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) {
         
-        self.config = config
-        self.completionHandler = completionHandler
+        self.check = Check(config: config,
+                           completionHandler: completionHandler)
     }
     
     override func resume() {
         
-        guard let config = self.config else {
+        guard let config = self.check.config else {
             
-            completionHandler(nil, nil, DataError.notConfigured)
+            self.check.completionHandler(nil, nil, DataError.notConfigured)
             return
         }
-        completionHandler(config.data, config.response, config.error)
+        self.check.completionHandler(config.data, config.response, config.error)
     }
 }
 
