@@ -11,14 +11,19 @@ import PromiseKit
 public extension PunkAPI {
     public func get(_ request: Request) -> Promise<[Beer]> {
         return Promise { resolver in
-            self.get(request) { result in
-                switch result {
-                case let .success(beers):
-                    resolver.fulfill(beers)
-                    
-                case let .failure(error):
-                    resolver.reject(error)
-                }
+            self.perform(request, resolver: resolver)
+        }
+    }
+    
+    fileprivate func perform(_ request: Request, resolver: Resolver<[Beer]>) {
+        
+        self.get(request) { result in
+            switch result {
+            case let .success(beers):
+                resolver.fulfill(beers)
+                
+            case let .failure(error):
+                resolver.reject(error)
             }
         }
     }
