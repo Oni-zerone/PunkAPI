@@ -31,6 +31,9 @@ Pod::Spec.new do |s|
 
   s.subspec 'PromiseKit' do |sp|
       sp.source_files = 'PunkAPI/PromiseKit/Classes/**/*'
+      
+      sp.dependency 'PunkAPI/API'
+      sp.dependency 'PromiseKit', '~> 6.8'
   end
   
   # s.resource_bundles = {

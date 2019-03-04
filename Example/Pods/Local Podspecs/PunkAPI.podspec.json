@@ -28,7 +28,15 @@
     },
     {
       "name": "PromiseKit",
-      "source_files": "PunkAPI/PromiseKit/Classes/**/*"
+      "source_files": "PunkAPI/PromiseKit/Classes/**/*",
+      "dependencies": {
+        "PunkAPI/API": [
+
+        ],
+        "PromiseKit": [
+          "~> 5"
+        ]
+      }
     }
   ]
 }
