@@ -29,20 +29,30 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZl-Yl-g7E">
                                 <rect key="frame" x="66" y="244" width="243" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Load Beers"/>
                                 <connections>
                                     <action selector="loadBeerAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tT1-Ms-trY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tld-2V-AAW">
+                                <rect key="frame" x="66" y="314" width="243" height="30"/>
+                                <state key="normal" title="Random Beer"/>
+                                <connections>
+                                    <action selector="loadRandomBeer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WhQ-1w-chG"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wZl-Yl-g7E" firstAttribute="top" secondItem="bXF-hH-fze" secondAttribute="bottom" constant="50" id="21X-jS-OkY"/>
+                            <constraint firstItem="Tld-2V-AAW" firstAttribute="top" secondItem="wZl-Yl-g7E" secondAttribute="bottom" constant="40" id="JSZ-TN-oqA"/>
+                            <constraint firstItem="Tld-2V-AAW" firstAttribute="leading" secondItem="wZl-Yl-g7E" secondAttribute="leading" id="Oom-kL-y35"/>
                             <constraint firstItem="wZl-Yl-g7E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="P1g-cb-Ja9"/>
                             <constraint firstItem="bXF-hH-fze" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-150" id="Qba-Fg-tb6"/>
                             <constraint firstItem="wZl-Yl-g7E" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="cAa-3I-nKq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bXF-hH-fze" secondAttribute="trailing" constant="10" id="ca9-Wr-Djz"/>
                             <constraint firstItem="bXF-hH-fze" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="qCi-lc-gUJ"/>
+                            <constraint firstItem="Tld-2V-AAW" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="yqk-45-CK9"/>
                         </constraints>
                     </view>
                     <connections>

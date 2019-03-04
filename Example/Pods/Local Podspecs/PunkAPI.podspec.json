@@ -20,5 +20,23 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "PunkAPI/Classes/**/*"
+  "default_subspecs": "API",
+  "subspecs": [
+    {
+      "name": "API",
+      "source_files": "PunkAPI/Classes/**/*"
+    },
+    {
+      "name": "PromiseKit",
+      "source_files": "PunkAPI/PromiseKit/Classes/**/*",
+      "dependencies": {
+        "PunkAPI/API": [
+
+        ],
+        "PromiseKit": [
+          "~> 5"
+        ]
+      }
+    }
+  ]
 }

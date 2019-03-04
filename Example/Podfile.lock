@@ -1,16 +1,36 @@
 PODS:
-  - PunkAPI (0.1.0)
+  - PromiseKit (6.8.3):
+    - PromiseKit/CorePromise (= 6.8.3)
+    - PromiseKit/Foundation (= 6.8.3)
+    - PromiseKit/UIKit (= 6.8.3)
+  - PromiseKit/CorePromise (6.8.3)
+  - PromiseKit/Foundation (6.8.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.8.3):
+    - PromiseKit/CorePromise
+  - PunkAPI (0.1.0):
+    - PunkAPI/API (= 0.1.0)
+  - PunkAPI/API (0.1.0)
+  - PunkAPI/PromiseKit (0.1.0):
+    - PromiseKit (~> 6.7)
+    - PunkAPI/API
 
 DEPENDENCIES:
   - PunkAPI (from `../`)
+  - PunkAPI/PromiseKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PromiseKit
 
 EXTERNAL SOURCES:
   PunkAPI:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PunkAPI: c9891a38a2efa7a052f02d02decceb58ca87b5ed
+  PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
+  PunkAPI: d1f879329a85f6a16bdfd8c478c9da163df49b59
 
-PODFILE CHECKSUM: 77a7edfbda92bc42f026175f2a4105df175a2c99
+PODFILE CHECKSUM: d9ed4e87e5248c7d10fc446b945660d3abddaee1
 
 COCOAPODS: 1.5.3
