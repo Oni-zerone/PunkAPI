@@ -1,5 +1,7 @@
 PODS:
-  - PunkAPI (0.1.0)
+  - PunkAPI (0.1.0):
+    - PunkAPI/API (= 0.1.0)
+  - PunkAPI/API (0.1.0)
 
 DEPENDENCIES:
   - PunkAPI (from `../`)
@@ -9,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PunkAPI: c9891a38a2efa7a052f02d02decceb58ca87b5ed
+  PunkAPI: 0a5d363e20f6a26abfd6281f5a247256a95775be
 
 PODFILE CHECKSUM: 77a7edfbda92bc42f026175f2a4105df175a2c99
 
