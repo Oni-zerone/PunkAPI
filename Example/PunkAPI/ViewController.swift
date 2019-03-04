@@ -8,6 +8,7 @@
 
 import UIKit
 import PunkAPI
+import PromiseKit
 
 class ViewController: UIViewController {
 
@@ -44,6 +45,17 @@ class ViewController: UIViewController {
                 case .failure(let error):
                     strongSelf.label.text = error.localizedDescription
             }
+        }
+    }
+    
+    @IBAction func loadRandomBeer(_ sender: Any) {
+        
+        let request = RandomBeerRequest()
+        PunkAPI().get(request)
+            .done { [weak self] beers in
+                self?.label.text = beers.first?.name
+            }.catch { [weak self] error in
+                self?.label.text = error.localizedDescription
         }
     }
 }
