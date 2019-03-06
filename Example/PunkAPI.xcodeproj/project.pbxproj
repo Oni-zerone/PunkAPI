@@ -14,6 +14,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		9761024E222B328F00C3BD6B /* BeersRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9761024D222B328F00C3BD6B /* BeersRequestTests.swift */; };
+		97610250222C431300C3BD6B /* PunkAPIInterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9761024F222C431300C3BD6B /* PunkAPIInterfaceTests.swift */; };
+		9761025C222DD5BB00C3BD6B /* PunkAPIPromiseInterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9761025B222DD5BB00C3BD6B /* PunkAPIPromiseInterfaceTests.swift */; };
 		9767CBF7221993F900E684C4 /* BeerParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CBF6221993F800E684C4 /* BeerParsingTests.swift */; };
 		9767CBFA2219958F00E684C4 /* BeerStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CBF82219958800E684C4 /* BeerStubs.swift */; };
 		9767CC092222B63700E684C4 /* URLBuildTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9767CC072222B60F00E684C4 /* URLBuildTests.swift */; };
@@ -50,6 +52,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		613B14F018C28CF1557EC3D5 /* Pods-PunkAPI_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PunkAPI_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PunkAPI_Tests/Pods-PunkAPI_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9761024D222B328F00C3BD6B /* BeersRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeersRequestTests.swift; sourceTree = "<group>"; };
+		9761024F222C431300C3BD6B /* PunkAPIInterfaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkAPIInterfaceTests.swift; sourceTree = "<group>"; };
+		9761025B222DD5BB00C3BD6B /* PunkAPIPromiseInterfaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkAPIPromiseInterfaceTests.swift; sourceTree = "<group>"; };
 		9767CBF6221993F800E684C4 /* BeerParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerParsingTests.swift; sourceTree = "<group>"; };
 		9767CBF82219958800E684C4 /* BeerStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerStubs.swift; sourceTree = "<group>"; };
 		9767CC072222B60F00E684C4 /* URLBuildTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuildTests.swift; sourceTree = "<group>"; };
@@ -186,12 +190,14 @@
 		9767CC032222B0C900E684C4 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				9761024F222C431300C3BD6B /* PunkAPIInterfaceTests.swift */,
 				9767CC072222B60F00E684C4 /* URLBuildTests.swift */,
 				9767CC0C2222BDD000E684C4 /* BeerRequestTests.swift */,
 				9761024D222B328F00C3BD6B /* BeersRequestTests.swift */,
 				9767CC25222B286F00E684C4 /* BeersRequestParametersTests.swift */,
 				9767CC0A2222BB1E00E684C4 /* MockSession.swift */,
 				9767CC0E2223550E00E684C4 /* ConfigurationTests.swift */,
+				9761025B222DD5BB00C3BD6B /* PunkAPIPromiseInterfaceTests.swift */,
 			);
 			name = Request;
 			sourceTree = "<group>";
@@ -389,12 +395,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PunkAPI_Example/Pods-PunkAPI_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/PunkAPI/PunkAPI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PunkAPI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +426,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9761025C222DD5BB00C3BD6B /* PunkAPIPromiseInterfaceTests.swift in Sources */,
 				9767CC0D2222BDD000E684C4 /* BeerRequestTests.swift in Sources */,
+				97610250222C431300C3BD6B /* PunkAPIInterfaceTests.swift in Sources */,
 				9767CC27222B299300E684C4 /* BeersRequestParametersTests.swift in Sources */,
 				9767CBF7221993F900E684C4 /* BeerParsingTests.swift in Sources */,
 				9767CC0F2223550E00E684C4 /* ConfigurationTests.swift in Sources */,

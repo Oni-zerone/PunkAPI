@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PunkAPI'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'A little swift wrapper for PunkAPI by @samjbmason'
   s.swift_version    = '4.2'
   
@@ -24,7 +24,17 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'PunkAPI/Classes/**/*'
+  s.default_subspec = 'API'
+  s.subspec 'API' do |sp|
+      sp.source_files = 'PunkAPI/Classes/**/*'
+  end
+
+  s.subspec 'PromiseKit' do |sp|
+      sp.source_files = 'PunkAPI/PromiseKit/Classes/**/*'
+      
+      sp.dependency 'PunkAPI/API'
+      sp.dependency 'PromiseKit', '~> 6.8'
+  end
   
   # s.resource_bundles = {
   #   'PunkAPI' => ['PunkAPI/Assets/*.png']

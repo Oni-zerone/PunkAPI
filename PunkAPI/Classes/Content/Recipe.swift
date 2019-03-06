@@ -7,9 +7,9 @@
 
 import Foundation
 
-public struct Recipe: Codable {
+public struct Recipe: Codable, Equatable {
     
-    public struct Ingredient: Codable {
+    public struct Ingredient: Codable, Equatable {
         public var name: String?
         public var amount: Mass?
     }

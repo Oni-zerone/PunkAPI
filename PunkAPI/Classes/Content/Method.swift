@@ -7,9 +7,9 @@
 
 import Foundation
 
-public struct Method: Codable {
+public struct Method: Codable, Equatable {
     
-    public struct Step: Codable {
+    public struct Step: Codable, Equatable {
         public var temp: Temperature?
         public var duration: Float?
     }

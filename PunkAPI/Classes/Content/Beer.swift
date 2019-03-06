@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Beer: Codable {
+public struct Beer: Codable, Equatable {
     
     public var id: Int
     public var name: String?
