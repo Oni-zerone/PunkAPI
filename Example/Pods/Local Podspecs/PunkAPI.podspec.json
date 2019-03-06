@@ -1,6 +1,6 @@
 {
   "name": "PunkAPI",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "A little swift wrapper for PunkAPI by @samjbmason",
   "swift_version": "4.2",
   "description": "\"Have you ever wanted to search through Brewdog's expansive back catalogue of beer in a programmatic way? Maybe build a tool that pairs beer with food, or search beers with an abv of more than 4%? Well now your prayers have been answered!\"",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/Oni-zerone/PunkAPI.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "social_media_url": "https://twitter.com/Oni_zerone",
   "platforms": {
@@ -34,7 +34,7 @@
 
         ],
         "PromiseKit": [
-          "~> 5"
+          "~> 6.8"
         ]
       }
     }
