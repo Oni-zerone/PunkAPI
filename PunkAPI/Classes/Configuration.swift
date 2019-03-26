@@ -22,6 +22,6 @@ public struct Configuration {
 
 public extension Configuration {
     
-    public static let `default` = Configuration(sessionConfiguration: .default,
+    static let `default` = Configuration(sessionConfiguration: .default,
                                                 baseURL: URL(string: "https://api.punkapi.com/v2/")!)
 }
