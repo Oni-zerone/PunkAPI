@@ -16,16 +16,19 @@ public class PunkAPI {
         self.configuration = configuration
     }
     
-    public func get(_ request: Request, queue: DispatchQueue = .global(qos: .background), completion: @escaping (Result<[Beer], Error>) -> Void) {
+    @discardableResult
+    public func get(_ request: Request, queue: DispatchQueue = .global(qos: .background), completion: @escaping (Result<[Beer], Error>) -> Void) -> URLSessionDataTask? {
      
         guard let url = configuration.baseURL.url(request: request) else {
             queue.async { completion(.failure(APIError.invalidURL)) }
-            return
+            return nil
         }
 
-        self.configuration.session.dataTask(with: url) { (result: Result<[Beer], Error>) in
+        let dataTask = self.configuration.session.dataTask(with: url) { (result: Result<[Beer], Error>) in
             queue.async { completion(result) }
-        }.resume()
+        }
+        dataTask.resume()
+        return dataTask
     }
 }
 
