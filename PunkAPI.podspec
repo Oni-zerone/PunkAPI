@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PunkAPI'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'A little swift wrapper for PunkAPI by @samjbmason'
   s.swift_version    = '5.0'
   
