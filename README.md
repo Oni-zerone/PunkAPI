@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.com/Oni-zerone/PunkAPI.svg?branch=develop)](https://travis-ci.com/Oni-zerone/PunkAPI)
 [![codebeat badge](https://codebeat.co/badges/bfe75f4d-ac1f-4e09-8a25-4f836bb93428)](https://codebeat.co/projects/github-com-oni-zerone-punkapi-develop)
 [![Coverage Status](https://coveralls.io/repos/github/Oni-zerone/PunkAPI/badge.svg?branch=develop)](https://coveralls.io/github/Oni-zerone/PunkAPI?branch=develop)
-[![Language](https://img.shields.io/badge/language-swift-orange.svg)](https://cocoapods.org/pods/PowerTools)
+[![Language](https://img.shields.io/badge/language-swift-orange.svg)](https://cocoapods.org/pods/PunkAPI)
 [![Platform](https://img.shields.io/cocoapods/p/PunkAPI.svg?style=flat)](https://cocoapods.org/pods/PunkAPI)
 [![License](https://img.shields.io/cocoapods/l/PunkAPI.svg?style=flat)](https://cocoapods.org/pods/PunkAPI)
 

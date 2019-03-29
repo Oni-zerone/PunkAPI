@@ -8,10 +8,10 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.8.3):
     - PromiseKit/CorePromise
-  - PunkAPI (0.2.0):
-    - PunkAPI/API (= 0.2.0)
-  - PunkAPI/API (0.2.0)
-  - PunkAPI/PromiseKit (0.2.0):
+  - PunkAPI (0.3.0):
+    - PunkAPI/API (= 0.3.0)
+  - PunkAPI/API (0.3.0)
+  - PunkAPI/PromiseKit (0.3.0):
     - PromiseKit (~> 6.8)
     - PunkAPI/API
 
@@ -29,8 +29,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   PromiseKit: 94c6e781838c5bf4717677d0d882b0e7250c80fc
-  PunkAPI: bf0b12efdfe84e986d7f3f2d9057e3cbcb007deb
+  PunkAPI: e24ccc2530e6a2aefe5a09db66c24e11612c6a6c
 
 PODFILE CHECKSUM: 140a1cf5c3e09e71ebdc08b298d32d1373675b44
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

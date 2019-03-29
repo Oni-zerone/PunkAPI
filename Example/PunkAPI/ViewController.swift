@@ -19,7 +19,6 @@ class ViewController: UIViewController {
 
     }
     
-    
     @IBAction func loadBeerAction(_ sender: Any) {
         
         let request = BeersRequest(filter: [.abv(condition: .more, value: 3)])

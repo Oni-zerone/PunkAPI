@@ -17,10 +17,13 @@ class PunkAPIInterfaceTests: XCTestCase {
 
     var mockSession: MockURLSession!
     var interface: PunkAPI!
+    var jsonDecoder: JSONDecoder!
     
     override func setUp() {
         
         mockSession = MockURLSession()
+        jsonDecoder = JSONDecoder()
+        jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
         let configuration = Configuration(session: mockSession, baseURL: URL(string: "https://api.test.it/v2/")!)
         interface = PunkAPI(configuration: configuration)
     }
@@ -79,12 +82,15 @@ class PunkAPIInterfaceTests: XCTestCase {
         }
         mockSession.check.responseConfig = (beerData, nil, nil)
         
-        interface.get(BeerRequest(id: 1)) { beerResult in
+        interface.get(BeerRequest(id: 1)) { [weak self] beerResult in
             switch beerResult {
                 
             case let .success(beers):
                 
-                let decodedBeers = try? JSONDecoder().decode([Beer].self, from: beerData)
+                guard let decodedBeers = try? self?.jsonDecoder.decode([Beer].self, from: beerData) else {
+                    XCTFail("unable to decode beers")
+                    return
+                }
                 XCTAssert(beers == decodedBeers)
                 
             default:
