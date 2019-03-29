@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'PunkAPI'
   s.version          = '0.2.0'
   s.summary          = 'A little swift wrapper for PunkAPI by @samjbmason'
-  s.swift_version    = '4.2'
+  s.swift_version    = '5.0'
   
   s.description      = <<-DESC
   "Have you ever wanted to search through Brewdog's expansive back catalogue of beer in a programmatic way? Maybe build a tool that pairs beer with food, or search beers with an abv of more than 4%? Well now your prayers have been answered!"
@@ -35,12 +35,4 @@ Pod::Spec.new do |s|
       sp.dependency 'PunkAPI/API'
       sp.dependency 'PromiseKit', '~> 6.8'
   end
-  
-  # s.resource_bundles = {
-  #   'PunkAPI' => ['PunkAPI/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
