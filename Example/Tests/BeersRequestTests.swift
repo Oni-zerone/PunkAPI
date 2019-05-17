@@ -23,7 +23,7 @@ class BeersRequestTests: XCTestCase {
         let request = BeersRequest(filter: [.abv(condition: .more, value: 34)])
         XCTAssert(request.path == "beers")
         XCTAssert(1 == request.parameters?.count)
-        XCTAssert(34 == request.parameters?["abv_gt"] as? Int)
+        XCTAssert(34 == request.parameters?["abv_gt"] as? Float)
     }
     
     func testPageParameter() {
@@ -40,10 +40,10 @@ class BeersRequestTests: XCTestCase {
     }
     
     func testPageWithSingleParameter() {
-        let request = BeersRequest(filter: [.abv(condition: .more, value: 34)], page: 1)
+        let request = BeersRequest(filter: [.abv(condition: .more, value: 34.1)], page: 1)
         XCTAssert(request.path == "beers")
         XCTAssert(2 == request.parameters?.count)
         XCTAssert(1 == request.parameters?["page"] as? Int)
-        XCTAssert(34 == request.parameters?["abv_gt"] as? Int)
+        XCTAssert(34.1 == request.parameters?["abv_gt"] as? Float)
     }
 }

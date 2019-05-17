@@ -15,7 +15,13 @@ public struct Configuration {
     
     public init(sessionConfiguration: URLSessionConfiguration, baseURL: URL) {
         
-        self.session = URLSession(configuration: sessionConfiguration)
+        self.init(session: URLSession(configuration: sessionConfiguration),
+                  baseURL: baseURL)
+    }
+    
+    public init(session: URLSession, baseURL: URL) {
+        
+        self.session = session
         self.baseURL = baseURL
     }
 }

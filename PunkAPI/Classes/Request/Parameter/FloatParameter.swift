@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct IntParameter: RequestParameter {
+struct FloatParameter: RequestParameter {
     
     var type: String
     var condition: Condition
@@ -15,7 +15,7 @@ struct IntParameter: RequestParameter {
     init(key: String, condition: Condition, value: Float) {
         self.type = key
         self.condition = condition
-        self.value = Int(value)
+        self.value = value
     }
     var key: String {
         return "\(type)_\(condition.dimension)"
