@@ -14,37 +14,37 @@ class BeersRequestParametersTests: XCTestCase {
     func testABVParameterGreater() {
         let parameter = getParameter(.abv(condition: .more, value: 1.2))
         XCTAssert(parameter.key == "abv_gt")
-        XCTAssert(1 == parameter.value as? Int)
+        XCTAssert(1.2 == parameter.value as? Float)
     }
     
     func testABVParameterLessThan() {
         let parameter = getParameter(.abv(condition: .less, value: 1.2))
         XCTAssert(parameter.key == "abv_lt")
-        XCTAssert(1 == parameter.value as? Int)
+        XCTAssert(1.2 == parameter.value as? Float)
     }
     
     func testIBUParameterGreater() {
         let parameter = getParameter(.ibu(condition: .more, value: 1.2))
         XCTAssert(parameter.key == "ibu_gt")
-        XCTAssert(1 == parameter.value as? Int)
+        XCTAssert(1.2 == parameter.value as? Float)
     }
     
     func testIBUParameterLessThan() {
         let parameter = getParameter(.ibu(condition: .less, value: 1.2))
         XCTAssert(parameter.key == "ibu_lt")
-        XCTAssert(1 == parameter.value as? Int)
+        XCTAssert(1.2 == parameter.value as? Float)
     }
     
     func testEBCParameterGreater() {
         let parameter = getParameter(.ebc(condition: .more, value: 1.2))
         XCTAssert(parameter.key == "ebc_gt")
-        XCTAssert(1 == parameter.value as? Int)
+        XCTAssert(1.2 == parameter.value as? Float)
     }
     
     func testEBCParameterLessThan() {
         let parameter = getParameter(.ebc(condition: .less, value: 1.2))
         XCTAssert(parameter.key == "ebc_lt")
-        XCTAssert(1 == parameter.value as? Int)
+        XCTAssert(1.2 == parameter.value as? Float)
     }
 
     func testBeerNameParameter() {
