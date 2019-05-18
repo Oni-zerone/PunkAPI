@@ -18,11 +18,9 @@ public extension PunkAPI {
     fileprivate func perform(_ request: Request, resolver: Resolver<[Beer]>) {
         
         self.get(request) { result in
-            switch result {
-            case let .success(beers):
-                resolver.fulfill(beers)
-                
-            case let .failure(error):
+            do {
+                resolver.fulfill(try result.get())
+            } catch let error {
                 resolver.reject(error)
             }
         }

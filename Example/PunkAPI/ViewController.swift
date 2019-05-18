@@ -16,33 +16,30 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     @IBAction func loadBeerAction(_ sender: Any) {
         
-        let request = BeersRequest(filter: [.abv(condition: .more, value: 3)])
+        let request = BeersRequest(filter: [.abv(condition: .more, value: 4.3)])
         
         PunkAPI().get(request, queue: .main) { [weak self] beersResult in
             
-            guard let strongSelf = self else { return }
-            switch beersResult {
-                
-                case .success(let beers):
-                    let string = beers.reduce(into: "", { (result, beer) in
-                        
-                        guard let name = beer.name else { return }
-                        if result.isEmpty {
-                            result = name
-                            return
-                        }
-                        return result.append(contentsOf: ", \(name)")
-                    })
+            guard let self = self else { return }
+            do {
+                let beers = try beersResult.get()
+                let string = beers.reduce(into: "", { (result, beer) in
                     
-                    strongSelf.label.text = string.isEmpty ? "Not Found" : string
+                    guard let name = beer.name else { return }
+                    if result.isEmpty {
+                        result = name
+                        return
+                    }
+                    return result.append(contentsOf: ", \(name)")
+                })
+                self.label.text = string.isEmpty ? "Not Found" : string
                 
-                case .failure(let error):
-                    strongSelf.label.text = error.localizedDescription
+            } catch let error {
+                self.label.text = error.localizedDescription
             }
         }
     }
