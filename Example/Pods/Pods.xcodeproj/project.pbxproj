@@ -48,7 +48,7 @@
 		80145FCF83AC60C7CC2FAD7ECD2572A9 /* when.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ACF4EE7A80EAF623401056759B0643 /* when.swift */; };
 		80BF3C3A64468B8FCB84A6C9969C4E16 /* Pods-PunkAPI_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A62AFA2C122C041A80B22940E3626D /* Pods-PunkAPI_Example-dummy.m */; };
 		83C3614DBAE541EFC0C2102CAF490080 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9491269C5B4C4CA7443038187BE1C610 /* Foundation.framework */; };
-		84135EA37918E693559EDDAFA3147D34 /* PunkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8204A953A9538763A16D9B79C507F5AC /* PunkAPI.swift */; };
+		84135EA37918E693559EDDAFA3147D34 /* PunkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8204A953A9538763A16D9B79C507F5AC /* PunkApi.swift */; };
 		847190E57BEC5349630CD2F55B771C6A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBD20C5C98555AD3DEBC278C92AFB9D /* Recipe.swift */; };
 		8B31A8CF2094F256952245D153F2888B /* fwd.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AAEF848AEF1FD8EB69818FC90B81C19 /* fwd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BF30DCC855B2B897DE4BB5362C21130 /* PromiseKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4D635088F341AA67F850A827C14172 /* PromiseKit-dummy.m */; };
@@ -133,9 +133,9 @@
 		235CDDE72E10F151E3D0A7E0D897AF32 /* Beer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		237FFFF513D6B6152F5BBE55535C050B /* NSObject+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Promise.swift"; path = "Extensions/Foundation/Sources/NSObject+Promise.swift"; sourceTree = "<group>"; };
 		27BA6F748BCD7CAD6990886F990A9944 /* AnyPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnyPromise.swift; path = Sources/AnyPromise.swift; sourceTree = "<group>"; };
-		285EBFC3C45AE16695FC5D95D04472C5 /* Pods_PunkAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PunkAPI_Tests.framework; path = "Pods-PunkAPI_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		285EBFC3C45AE16695FC5D95D04472C5 /* Pods_PunkAPI_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkAPI_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0F952029ECA36B4317D1E06AD895B7 /* Quantity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Quantity.swift; sourceTree = "<group>"; };
-		2D478F471257F63E67738623DCBE1869 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PromiseKit.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D478F471257F63E67738623DCBE1869 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D4D635088F341AA67F850A827C14172 /* PromiseKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PromiseKit-dummy.m"; sourceTree = "<group>"; };
 		31FADD9E89070EFF5AD05064E22BB174 /* join.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = join.m; path = Sources/join.m; sourceTree = "<group>"; };
 		327FE12A9711CFE52497A368A29FA007 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,18 +170,18 @@
 		7CE2307CC8C3B42DAF98663EAE5D2E60 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Promise.swift; sourceTree = "<group>"; };
 		7D80573501D21DC8AD8775039F8ABB67 /* UIView+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+AnyPromise.m"; path = "Extensions/UIKit/Sources/UIView+AnyPromise.m"; sourceTree = "<group>"; };
 		805B87BE5EF6F0F575A3D02792A38369 /* Pods-PunkAPI_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PunkAPI_Example.modulemap"; sourceTree = "<group>"; };
-		8204A953A9538763A16D9B79C507F5AC /* PunkAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PunkAPI.swift; path = PunkAPI/Classes/PunkAPI.swift; sourceTree = "<group>"; };
+		8204A953A9538763A16D9B79C507F5AC /* PunkApi.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PunkApi.swift; path = PunkAPI/Classes/PunkApi.swift; sourceTree = "<group>"; };
 		86BD929429E4AA00D0A211BF1B963E12 /* CustomStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomStringConvertible.swift; path = Sources/CustomStringConvertible.swift; sourceTree = "<group>"; };
 		8EB86AC94D4752E91897EB6A4FEBC37F /* NSTask+AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTask+AnyPromise.m"; path = "Extensions/Foundation/Sources/NSTask+AnyPromise.m"; sourceTree = "<group>"; };
 		9036DC0CAE0C329C78DDFA1D1785D9F8 /* NSNotificationCenter+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Promise.swift"; path = "Extensions/Foundation/Sources/NSNotificationCenter+Promise.swift"; sourceTree = "<group>"; };
-		9271861619B31A3F3194E31B66985DAB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9271861619B31A3F3194E31B66985DAB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9491269C5B4C4CA7443038187BE1C610 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		96FBB284550A6F019E34F20F7CE598B7 /* PunkAPI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PunkAPI-Info.plist"; sourceTree = "<group>"; };
-		9994C08E803F428D47901365D835E414 /* Pods_PunkAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PunkAPI_Example.framework; path = "Pods-PunkAPI_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9994C08E803F428D47901365D835E414 /* Pods_PunkAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PunkAPI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FC0AD1CFE83D8A826E605A902D38CC /* RandomBeerRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RandomBeerRequest.swift; sourceTree = "<group>"; };
 		9BE4D8E011D8C811F064D8A59C7EFF91 /* Thenable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Thenable.swift; path = Sources/Thenable.swift; sourceTree = "<group>"; };
 		9D1C004DA096F2A600E3D2A36057F395 /* Method.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F51383849898E614BA85FBE7FFC767A /* NSNotificationCenter+AnyPromise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+AnyPromise.h"; path = "Extensions/Foundation/Sources/NSNotificationCenter+AnyPromise.h"; sourceTree = "<group>"; };
 		A86C76820F1A55B4F5369A92E5A9000C /* RequestParameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestParameter.swift; sourceTree = "<group>"; };
 		A8F2335B7E6754B286937C3C27490DF2 /* hang.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = hang.m; path = Sources/hang.m; sourceTree = "<group>"; };
@@ -199,8 +199,8 @@
 		C2BA4FE9F301A2DE595EF18D1981B50B /* AnyPromise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AnyPromise.m; path = Sources/AnyPromise.m; sourceTree = "<group>"; };
 		C3A62AFA2C122C041A80B22940E3626D /* Pods-PunkAPI_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PunkAPI_Example-dummy.m"; sourceTree = "<group>"; };
 		C444C149881566C5B6565FF76E6EB5A3 /* PunkAPI.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PunkAPI.xcconfig; sourceTree = "<group>"; };
-		C711613FB88B05B2A712B87FBA3F010F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		C74EC1810B5874538A2FD34A3DA70986 /* PunkAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PunkAPI.framework; path = PunkAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C711613FB88B05B2A712B87FBA3F010F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C74EC1810B5874538A2FD34A3DA70986 /* PunkAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PunkAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CADB7267500265B1DF9A0EF15DF2854F /* URLBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
 		CBD630693AD71C67F7BF82907D7DF286 /* Pods-PunkAPI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PunkAPI_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CC8FC799CC8A849928D542136BA52B28 /* BeerRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BeerRequest.swift; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 		F0A7513D4F5F6646CB48F6D152E1D4E3 /* PunkAPI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PunkAPI-dummy.m"; sourceTree = "<group>"; };
 		F392962B6F3607C58FB96B4ED4181C6C /* UIViewPropertyAnimator+Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewPropertyAnimator+Promise.swift"; path = "Extensions/UIKit/Sources/UIViewPropertyAnimator+Promise.swift"; sourceTree = "<group>"; };
 		F461DB5C996CED28C0BF7B546ED173BA /* Pods-PunkAPI_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PunkAPI_Tests-Info.plist"; sourceTree = "<group>"; };
-		F9301413E6D5C8066952F792B44806CE /* PunkAPI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PunkAPI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F9301413E6D5C8066952F792B44806CE /* PunkAPI.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PunkAPI.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FA0C150B648260A1B3A53EEDE1575083 /* Pods-PunkAPI_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PunkAPI_Example-Info.plist"; sourceTree = "<group>"; };
 		FCB5388CF300CAB8E9F0D8BF4B871A5C /* PunkAPI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PunkAPI.modulemap; sourceTree = "<group>"; };
 		FD97E72D6587F144A9BA9A0991F02FF2 /* PromiseKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PromiseKit.modulemap; sourceTree = "<group>"; };
@@ -332,7 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				1C989BFEA07921F145C09BB75B093301 /* Configuration.swift */,
-				8204A953A9538763A16D9B79C507F5AC /* PunkAPI.swift */,
+				8204A953A9538763A16D9B79C507F5AC /* PunkApi.swift */,
 				96671C622A3DD3259EFDADF9F820BD1F /* Content */,
 				3A8A5931A5CC0B971B92D27FE3900294 /* Request */,
 				260AB2077D6F3D40343714E1C25D6804 /* Results */,
@@ -368,7 +368,6 @@
 				A86C76820F1A55B4F5369A92E5A9000C /* RequestParameter.swift */,
 				076E7A8560DFAFB8A647B2A35293CEA6 /* StringParameter.swift */,
 			);
-			name = Parameter;
 			path = Parameter;
 			sourceTree = "<group>";
 		};
@@ -535,7 +534,6 @@
 				6244FD98BEC6BFE26A365DC8179A6911 /* Support Files */,
 				C8E9EB0D4E69E69D6479278E3D3599F4 /* UIKit */,
 			);
-			name = PromiseKit;
 			path = PromiseKit;
 			sourceTree = "<group>";
 		};
@@ -697,6 +695,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -811,7 +810,7 @@
 				701FC241CFF51869B91B346062887E32 /* Method.swift in Sources */,
 				697107BDDB402824E2D21B5768D3216E /* PunkAPI+PromiseKit.swift in Sources */,
 				4DD4DC51B32E02D21613D4C5888C7CFF /* PunkAPI-dummy.m in Sources */,
-				84135EA37918E693559EDDAFA3147D34 /* PunkAPI.swift in Sources */,
+				84135EA37918E693559EDDAFA3147D34 /* PunkApi.swift in Sources */,
 				5E9A6176DDB6E0178BE9CF9346686F84 /* Quantity.swift in Sources */,
 				945140FB45AF1038D7793CB753D9BDC4 /* RandomBeerRequest.swift in Sources */,
 				847190E57BEC5349630CD2F55B771C6A /* Recipe.swift in Sources */,
@@ -980,8 +979,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};

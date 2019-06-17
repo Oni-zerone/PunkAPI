@@ -8,7 +8,7 @@
 import Foundation
 import PromiseKit
 
-public extension PunkAPI {
+public extension PunkApi {
     func get(_ request: Request) -> Promise<[Beer]> {
         return Promise { resolver in
             self.perform(request, resolver: resolver)
