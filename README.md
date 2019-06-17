@@ -25,9 +25,9 @@ let punkApi = PunkApi(configuration: .default)
 punkApi.get(RandomBeerRequest(), queue: .main) { beersResult in  }
 punkApi.get(BeerRequest(id: 1), queue: .main) { beersResult in  }
 punkApi.get(RandomBeerRequest(), queue: .main) { beersResult in  }
-punkApi.get(BeersRequest(filter: [
-    .abv(condition: .more, value: 3),
-    .beerName(value: "Punk")]), queue: .main) { beersResult in  }
+punkApi.get(BeersRequest(filter: [.abv(condition: .more, value: 3),
+                                  .beerName(value: "Punk")]), 
+                         queue: .main) { beersResult in  }
 ```
 
 ## API
