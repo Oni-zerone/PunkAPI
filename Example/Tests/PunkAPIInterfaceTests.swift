@@ -16,7 +16,7 @@ enum TestError: Error {
 class PunkAPIInterfaceTests: XCTestCase {
 
     var mockSession: MockURLSession!
-    var interface: PunkAPI!
+    var interface: PunkApi!
     var jsonDecoder: JSONDecoder!
     
     override func setUp() {
@@ -25,7 +25,7 @@ class PunkAPIInterfaceTests: XCTestCase {
         jsonDecoder = JSONDecoder()
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
         let configuration = Configuration(session: mockSession, baseURL: URL(string: "https://api.test.it/v2/")!)
-        interface = PunkAPI(configuration: configuration)
+        interface = PunkApi(configuration: configuration)
     }
 
     override func tearDown() {

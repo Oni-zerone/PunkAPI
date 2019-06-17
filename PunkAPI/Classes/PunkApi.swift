@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class PunkAPI {
+public class PunkApi {
     
     var configuration: Configuration
     

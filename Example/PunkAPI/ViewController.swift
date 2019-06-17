@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         
         let request = BeersRequest(filter: [.abv(condition: .more, value: 4.3)])
         
-        PunkAPI().get(request, queue: .main) { [weak self] beersResult in
+        PunkApi().get(request, queue: .main) { [weak self] beersResult in
             
             guard let self = self else { return }
             do {
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     @IBAction func loadRandomBeer(_ sender: Any) {
         
         let request = RandomBeerRequest()
-        PunkAPI().get(request)
+        PunkApi().get(request)
             .done { [weak self] beers in
                 self?.label.text = beers.first?.name
             }.catch { [weak self] error in

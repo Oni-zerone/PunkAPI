@@ -19,33 +19,33 @@ _The Punk API takes Brewdog's DIY Dog and turns it into a searchable, filterable
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Usage
-```
-let punkApi = PunkAPI(configuration: .default)
+```swift
+let punkApi = PunkApi(configuration: .default)
 
 punkApi.get(RandomBeerRequest(), queue: .main) { beersResult in  }
 punkApi.get(BeerRequest(id: 1), queue: .main) { beersResult in  }
 punkApi.get(RandomBeerRequest(), queue: .main) { beersResult in  }
-punkApi.get(BeersRequest(filter: [
-    .abv(condition: .more, value: 3),
-    .beerName(value: "Punk")]), queue: .main) { beersResult in  }
+punkApi.get(BeersRequest(filter: [.abv(condition: .more, value: 3),
+                                  .beerName(value: "Punk")]), 
+                         queue: .main) { beersResult in  }
 ```
 
 ## API
 ####    `RandomBeerRequest()`
 Get a random beer request
-```
+```swift
 punkApi.get(RandomBeerRequest(), queue: .main) { beersResult in  }
 ```
 
 ####    `BeerRequest(id: 1)`
 Get a beer from given id
-```
+```swift
 punkApi.get(BeerRequest(id: 1), queue: .main) { beersResult in  }
 ```
 
 ####    `BeersRequest(filter: [BeersRequest.Parameter.beerName(value: "Punk IPA")])`
 Get beers that match the passed in options, if no options are passed in it will return all beers in ascending order of `id`.
-```
+```swift
 punkApi.get(RandomBeerRequest(), queue: .main) { beersResult in  }
 ```
 **Options**
