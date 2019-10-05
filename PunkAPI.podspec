@@ -35,4 +35,11 @@ Pod::Spec.new do |s|
       sp.dependency 'PunkAPI/API'
       sp.dependency 'PromiseKit', '~> 6.8'
   end
+  
+  s.subspec 'RxSwift' do |sp|
+      sp.source_files = 'PunkAPI/RxSwift/Classes/**/*'
+      
+      sp.dependency 'PunkAPI/API'
+      sp.dependency 'RxSwift', '~> 5.0'
+  end
 end

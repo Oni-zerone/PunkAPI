@@ -2,7 +2,7 @@
   "name": "PunkAPI",
   "version": "0.3.1",
   "summary": "A little swift wrapper for PunkAPI by @samjbmason",
-  "swift_version": "5.0",
+  "swift_versions": "5.0",
   "description": "\"Have you ever wanted to search through Brewdog's expansive back catalogue of beer in a programmatic way? Maybe build a tool that pairs beer with food, or search beers with an abv of more than 4%? Well now your prayers have been answered!\"",
   "homepage": "https://github.com/Oni-zerone/PunkAPI",
   "license": {
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/Oni-zerone/PunkAPI.git",
-    "tag": "0.3.1"
+    "tag": "StoriesLayout-0.3.1"
   },
   "social_media_url": "https://twitter.com/Oni_zerone",
   "platforms": {
@@ -37,6 +37,19 @@
           "~> 6.8"
         ]
       }
+    },
+    {
+      "name": "RxSwift",
+      "source_files": "PunkAPI/RxSwift/Classes/**/*",
+      "dependencies": {
+        "PunkAPI/API": [
+
+        ],
+        "RxSwift": [
+          "~> 5.0"
+        ]
+      }
     }
-  ]
+  ],
+  "swift_version": "5.0"
 }
