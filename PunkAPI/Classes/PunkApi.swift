@@ -30,6 +30,20 @@ public class PunkApi {
         dataTask.resume()
         return dataTask
     }
+    
+    @available(iOS 15.0, *)
+    public func get(_ request: Request) async throws -> [Beer] {
+        
+        guard let url = configuration.baseURL.url(request: request) else {
+            throw APIError.invalidURL
+        }
+        
+        let data = try await self.configuration.session.data(for: URLRequest(url: url)).data
+        
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return try decoder.decode([Beer].self, from: data)
+    }
 }
 
 extension URLSession {
